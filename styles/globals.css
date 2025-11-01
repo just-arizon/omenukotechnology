@@ -52,6 +52,7 @@
   --spacing: 0.25rem;
   --duration: 10s;
   --gap: 1rem;
+   --secondary-hue: 25;
 }
 
 .dark {
@@ -225,9 +226,21 @@ body {
 .animate-shiny-text {
   animation: shiny-text 3s ease-in-out infinite;
 }
-@keyframes spin {
-  to { transform: rotate(360deg); }
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
-.animate-spin {
-  animation: spin 3s linear infinite;
+
+
+@theme{
+
+  --animate-rotate-border: border-rotate 1s linear infinite;
+
+@keyframes border-rotate {
+  to { 
+    --border-angle: 360deg; 
+  }
 }
+}
+
