@@ -235,7 +235,7 @@ body {
 
 @theme{
 
-  --animate-rotate-border: border-rotate 1s linear infinite;
+  --animate-rotate-border: border-rotate 2s linear infinite;
 
 @keyframes border-rotate {
   to { 

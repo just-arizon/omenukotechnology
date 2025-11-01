@@ -37,7 +37,7 @@ export default function AvatarCluster() {
         {avatars.slice(0, 3).map((a, i) => (
           <div
             key={a.id}
-            className={`flex flex-1 ${i === 1 ? "justify-start lg:pl-12" : "justify-center"}`}
+            className={`flex lg:flex-1 ${i === 1 ? "justify-start lg:pl-12" : "justify-center"}`}
           >
             <motion.div
               variants={floatVariants}
@@ -67,7 +67,7 @@ export default function AvatarCluster() {
         {avatars.slice(3, 6).map((a, i) => (
           <div
             key={a.id}
-            className={`flex flex-1 ${i === 1 ? "justify-end lg:pr-14" : "justify-center"}`}
+            className={`flex lg:flex-1 ${i === 1 ? "justify-end lg:pr-14" : "justify-center"}`}
           >
             <motion.div
               variants={floatVariants}
