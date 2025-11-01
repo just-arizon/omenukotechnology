@@ -31,7 +31,7 @@ const floatVariants = {
 
 export default function AvatarCluster() {
   return (
-    <div className="pointer-events-none absolute top-0 h-full w-full flex justify-between lg:pt-14 pt-20">
+    <div className="pointer-events-none absolute top-0 h-full w-full flex justify-between lg:pt-14 pt-10">
       {/* left column */}
       <div className="flex flex-col flex-1">
         {avatars.slice(0, 3).map((a, i) => (
