@@ -16,10 +16,10 @@ function Homemarque({}: Props) {
               Trusted by developers at
             </p>
 
-            <div className="flex gap-8 animate-marquee">
+            <div className="flex gap-3 animate-marquee">
               {/* duplicate set → seamless loop */}
               {[...Array(2)].map((_, i) => (
-                <div key={i} className="flex shrink-0 gap-8">
+                <div key={i} className="flex gap-1">
                   {/* Vercel */}
                   <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
                     <svg
