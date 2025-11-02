@@ -14,7 +14,7 @@ export default function Hero() {
     <>
       <section className="relative overflow-hidden min-h-screen flex flex-col">
         <AvatarCluster />
-        <div className="container mx-auto px-4  sm:py-14  py-12  z-10 flex-1 flex flex-col">
+        <div className="container mx-auto px-4  sm:py-14 mt-10 py-12  z-10 flex-1 flex flex-col">
           <div className="mx-auto max-w-4xl text-center flex-1 flex flex-col justify-center">
             {/* Badge */}
             <div className="flex justify-center lg:mb-8 mb-4">
