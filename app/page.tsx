@@ -206,7 +206,7 @@ export default function Home() {
 
       {/* Mobile Header */}
       <header className="sticky top-4 z-[9999] mx-4 flex w-auto flex-row items-center justify-between rounded-full bg-background/80 backdrop-blur-sm border border-border/50 shadow-lg md:hidden px-4 py-3">
-          <a
+        <a
           className={`z-50 flex items-center justify-center gap-2 transition-all duration-300 ${
             isScrolled ? "ml-4" : ""
           }`}
@@ -342,14 +342,11 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero />
-
+      
       {/* Features Section */}
-      <div id="features">
-        {/* <Features /> */}
-      </div>
+      <div id="features">{/* <Features /> */}</div>
 
       {/* Pricing Section */}
-
 
       {/* Testimonials Section */}
       <div id="testimonials">
@@ -360,9 +357,8 @@ export default function Home() {
       <div id="faq">
         <FAQSection />
       </div>
-      
-      <NewReleasePromo />
 
+      <NewReleasePromo />
 
       {/* Sticky Footer */}
       <StickyFooter />

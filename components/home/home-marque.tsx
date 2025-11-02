@@ -6,13 +6,11 @@ type Props = {}
 function Homemarque({}: Props) {
   return (
     
-          {/* Social Proof Section */}
-          {/* Social Proof Marquee */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-auto py-8 overflow-hidden"
+            className="mt-16 overflow-hidden"
           >
             <p className="text-sm text-muted-foreground text-center mb-6">
               Trusted by developers at

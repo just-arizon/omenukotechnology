@@ -194,14 +194,6 @@ body {
   }
 }
 
-@keyframes marquee-vertical {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
-  }
-}
 
 @keyframes shiny-text {
   0%,
@@ -219,9 +211,6 @@ body {
   animation: marquee var(--duration) linear infinite;
 }
 
-.animate-marquee-vertical {
-  animation: marquee-vertical var(--duration) linear infinite;
-}
 
 .animate-shiny-text {
   animation: shiny-text 3s ease-in-out infinite;

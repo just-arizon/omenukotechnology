@@ -7,16 +7,17 @@ import { Flame } from "lucide-react";
 import HeroWord from "./hero-word";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import AvatarCluster from "../avatarcluster";
+import Homemarque from "./home-marque";
 
 export default function Hero() {
   return (
     <>
       <section className="relative overflow-hidden min-h-screen flex flex-col">
         <AvatarCluster />
-        <div className="container mx-auto px-4  sm:py-14  py-12 relative z-10 flex-1 flex flex-col">
+        <div className="container mx-auto px-4  sm:py-14  py-12  z-10 flex-1 flex flex-col">
           <div className="mx-auto max-w-4xl text-center flex-1 flex flex-col justify-center">
             {/* Badge */}
-            <div className="flex justify-center mb-8 ">
+            <div className="flex justify-center lg:mb-8 mb-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -96,6 +97,9 @@ export default function Hero() {
                 </a>
               </div>
             </motion.div>
+
+            {/* Marquee */}
+            <Homemarque />
           </div>
         </div>
       </section>
